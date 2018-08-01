@@ -6,9 +6,6 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"github.com/channelmeter/vault-gatekeeper-mesos/gatekeeper"
-	"github.com/franela/goreq"
-	"github.com/gin-gonic/gin"
 	"log"
 	"net/http"
 	"net/url"
@@ -16,6 +13,10 @@ import (
 	"strconv"
 	"sync"
 	"time"
+
+	"github.com/franela/goreq"
+	"github.com/gin-gonic/gin"
+	"github.com/kamilhristov/vault-gatekeeper/gatekeeper"
 )
 
 type GkStatus string
